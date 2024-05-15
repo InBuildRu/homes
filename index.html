@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<script>
+    function showMessage() {
+        navigator.clipboard.writeText('inbuild-mc.ru')
+    }
+</script>
+<style>
+    .container {
+        text-align: center;        
+    }
+
+    body {
+        font-family: 'Minecraft Rus', 'Roboto', sans-serif;
+        src: url("fonts/minecraft.ttf");
+        background: linear-gradient(#ffd900, #fe7e00) fixed;
+        text-align: center;
+      }
+
+    .navigation a {
+        text-decoration: none; 
+        font-family: 'Minecraft Rus', 'Roboto', sans-serif;
+        color: rgb(0, 0, 0); 
+        padding: 6px 15px;
+        border-radius: 20px; 
+        margin: 0 10px;
+    }
+
+    .navigation a:hover, 
+    .navigation a.active {
+        background: rgb(0, 0, 0);
+        color: white;
+    }
+
+    header {
+        position: absolute; top: 0;
+        left: 0;
+        width: 90%;
+        padding: 30px 14px; display: flex;
+        justify-content: space-between; align-items: center; z-index: 100;
+    }
+
+    .all {
+        font-size: 60px;
+        font-family: 'Minecraft Rus', 'Roboto', sans-serif;
+      }
+
+    .all2 {
+        font-size: 30px;
+        font-family: 'Minecraft Rus', 'Roboto', sans-serif;
+    }
+    .all3 {
+        font-size: 25px;
+        font-family: 'Minecraft Rus', 'Roboto', sans-serif;
+    }
+    .btn {
+        font-family: 'Minecraft Rus', 'Roboto', sans-serif;
+        src: url("fonts/minecraft.ttf");
+        display: inline-block;
+        padding: 15px 30px;
+        border: none;
+        background: rgb(0, 0, 0);
+        border-radius: 10px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .btn:hover {
+        background: rgb(94, 94, 94);
+    }
+</style>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://myfonts.ru/myfonts?fonts=minecraft-rus" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <title>Главная</title>
+    </head>
+    <body>
+        <header>
+            <p><img width="19%" src='Logo.png' alt='image'></p>
+            <nav class="navigation">
+                <a href="https://inbuildru.github.io/homes/" class="active">Главная</a>
+                <a href="rules.html">Правила</a>
+                <a href="info.html">Информация</a>
+                <a href="channel.html">Канал</a>
+                <a href="ivents.html">Ивенты</a>
+            </nav>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="all">Сервер InBuild</p>
+        <p><img width="10%" src='Logo.png' alt='image'></p>
+        <p class="all2">Сервер InBuild на версию 1.12.2 с модами!</p>
+        <br>
+        <p class="all3"><strong>1.</strong> Как скачать моды?</p>
+        <form action="https://telegra.ph/Kak-skachat-mody-dlya-servera-InBuild-05-06" target="_blank">
+            <button class="btn">Инструкция</button>
+        </form>
+        <p class="all3"><strong>2.</strong> Скачать моды</p>
+        <form action="https://drive.google.com/file/d/1VlSVwmDLIUZSexbM3Ve0EVyf_zUdD1rO/view?usp=sharing" target="_blank">
+            <button class="btn">Скачать</button>
+        </form>    
+        <p class="all3"><strong>3.</strong> Копировать IP</p>    
+        <button type="button" class="btn" id="btn1" onclick="showMessage()">Копировать</button>
+    </body>
+</html>
